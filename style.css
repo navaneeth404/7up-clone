@@ -1,0 +1,139 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: #00b3b1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+.logo {
+  height: 40px;
+  width: auto;
+}
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icons a {
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #ffd700;
+}
+
+/* Section base */
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Section 1 styles */
+.banner-section {
+  background: 
+    linear-gradient(to top right, #027a7d, #00d1c1, #fffb8b),
+    url('https://www.7up.com/images/simple-7up/tropical-header.png');
+  background-blend-mode: overlay;
+}
+.flavor-tag {
+  background-color: red;
+  display: inline-block;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.flavor-tag span {
+  display: block;
+  font-size: 20px;
+}
+.banner-section h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+.banner-section button {
+  padding: 12px 26px;
+  font-size: 15px;
+  background-color: white;
+  color: #00b3b1;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Section 2 styles */
+.recipes-section {
+  background:
+    linear-gradient(to bottom right, #f9d6ec, #fcdadf),
+    url('https://www.7up.com/images/simple-7up/image2.png');
+  background-blend-mode: overlay;
+}
+.overlay {
+  background-color: rgba(0, 70, 30, 0.8);
+  padding: 40px 60px;
+  border-radius: 30px;
+  max-width: 600px;
+}
+.overlay h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.overlay p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.overlay button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: white;
+  color: darkgreen;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Section 3 styles */
+.store-section {
+  background:
+    linear-gradient(to bottom right, #005f34, #00b139),
+    url('https://www.7up.com/images/simple-7up/image1.png');
+  background-blend-mode: overlay;
+}
